@@ -1,0 +1,10 @@
+/labs/tsam15/my_port - gives port number to use for testing
+	= 21332
+
+ps -aux | grep $USER | grep echo
+kill {procID}
+
+tftp client on skel to test:
+tftp 127.0.0.1 21332 -c get example.data1
+
+Listens to our server and we see if it recieves our file
